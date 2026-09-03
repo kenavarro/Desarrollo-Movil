@@ -418,3 +418,115 @@ Estas funcionalidades no forman parte del alcance de la primera versión.
 ## Autor
 
 Proyecto académico desarrollado como parte del curso de **Desarrollo de Aplicaciones Android**.
+
+# M2 – Avance del proyecto
+
+## Semana 2 – Creación del proyecto y diseño de interfaces
+
+Durante el Módulo 2 se inició el desarrollo práctico del Sistema Móvil de Control de Asistencia a partir del borrador elaborado en M1.
+
+### Actividades realizadas
+
+- Instalación y configuración de Git en Windows.
+- Clonación del repositorio del proyecto desde GitHub.
+- Creación de la rama de trabajo `m2-progreso`.
+- Creación del proyecto Android en Android Studio.
+- Configuración inicial del proyecto con:
+    - Kotlin.
+    - XML.
+    - Minimum SDK API 24.
+    - Kotlin DSL.
+- Configuración de un dispositivo virtual Android:
+    - Medium Phone.
+    - Android 16.
+    - API 36.
+- Compilación y ejecución exitosa de la aplicación en el emulador.
+
+### Interfaces creadas
+
+Durante esta semana se desarrollaron visualmente las cuatro pantallas definidas en el borrador del proyecto:
+
+1. `MainActivity`
+    - Pantalla principal.
+    - Título del sistema.
+    - Botón Nueva Asistencia.
+    - Botón Administración.
+
+2. `RegistroAsistenciaActivity`
+    - Campo para nombre del participante.
+    - Botón Agregar.
+    - Ejemplos visuales de participantes.
+    - Total de participantes.
+    - Total de presentes.
+    - Total de ausentes.
+    - Botón Ver Resumen.
+
+3. `AdministracionActivity`
+    - Listado visual de participantes.
+    - Botones Editar.
+    - Botones Eliminar.
+    - Botón Reiniciar Sesión.
+
+4. `ResumenActivity`
+    - Total de participantes.
+    - Presentes.
+    - Ausentes.
+    - Listado visual de presentes.
+    - Listado visual de ausentes.
+    - Botón Compartir.
+    - Botón Nueva Sesión.
+
+### Navegación implementada
+
+Se utilizó un `Intent` para conectar la pantalla principal con la pantalla de registro de asistencia.
+
+El flujo implementado actualmente es:
+
+MainActivity  
+→ Nueva Asistencia  
+→ Intent  
+→ RegistroAsistenciaActivity
+
+Esta implementación permitió aplicar de forma práctica los conceptos de `Activity`, `Intent` y navegación entre pantallas estudiados durante el módulo.
+
+### Estado actual
+
+Las interfaces creadas durante M2 son principalmente visuales. Los nombres de participantes, estados y conteos mostrados actualmente son datos de ejemplo utilizados para representar los wireframes.
+
+Todavía no se ha implementado:
+
+- Registro dinámico de participantes.
+- Modificación de participantes.
+- Eliminación de participantes.
+- Conteo automático real.
+- Generación dinámica del resumen.
+- Función de compartir.
+- Reinicio de sesión.
+
+Estas funciones se desarrollarán progresivamente en los siguientes módulos.
+
+### Troubleshooting
+
+Durante la configuración inicial se presentó un error de Gradle debido a que la ruta del proyecto contenía un carácter no ASCII en la carpeta `Móviles`.
+
+Ruta con problema:
+
+`Desarrollo de Aps Móviles`
+
+Se corrigió cambiando el nombre de la carpeta a:
+
+`Desarrollo de Aps Moviles`
+
+Después de realizar el cambio, Android Studio pudo sincronizar y compilar correctamente el proyecto.
+
+### Control de versiones
+
+Para el desarrollo de M2 se utilizó la rama:
+
+`m2-progreso`
+
+También se actualizó el archivo `.gitignore` para evitar incluir la carpeta `.idea`, ya que contiene configuraciones locales de Android Studio.
+
+### Próximos pasos
+
+En los siguientes módulos se continuará con la implementación de la lógica funcional del sistema, comenzando con el registro y visualización dinámica de participantes.
