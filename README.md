@@ -530,3 +530,75 @@ También se actualizó el archivo `.gitignore` para evitar incluir la carpeta `.
 ### Próximos pasos
 
 En los siguientes módulos se continuará con la implementación de la lógica funcional del sistema, comenzando con el registro y visualización dinámica de participantes.
+
+## M4 – Actualización del proyecto y registro de cambios
+
+Durante este módulo se realizó una nueva revisión del proyecto **Sistema Móvil de Control de Asistencia**, tomando como referencia el borrador desarrollado durante los módulos anteriores.
+
+El propósito principal continúa siendo desarrollar una aplicación Android sencilla que permita registrar participantes de una actividad, controlar su estado de asistencia y obtener un resumen de los resultados.
+
+Se mantiene el alcance definido originalmente: la primera versión de la aplicación no utilizará una base de datos, Firebase, servidores externos ni sincronización en la nube. Los datos serán manejados temporalmente durante la sesión activa de la aplicación.
+
+### Cambios realizados en el proyecto
+
+Durante los primeros módulos se definieron el problema, los objetivos, el alcance, las tecnologías que se utilizarán y los wireframes de las principales pantallas.
+
+Posteriormente se comenzó a trabajar con los conceptos fundamentales del desarrollo Android, incluyendo Activities, Fragments, Intents, ciclo de vida de las Activities y navegación entre los diferentes componentes de una aplicación.
+
+En este módulo se continúa avanzando hacia la implementación de las funciones principales del sistema de asistencia, especialmente las relacionadas con el manejo de participantes y sus estados.
+
+Las funciones contempladas en esta etapa son:
+
+* Registrar participantes.
+* Mostrar los participantes ingresados.
+* Marcar a cada participante como presente o ausente.
+* Permitir modificar información registrada.
+* Permitir eliminar participantes ingresados por error.
+* Mantener los datos únicamente durante la sesión activa.
+* Preparar la estructura necesaria para implementar posteriormente los conteos y el resumen de asistencia.
+
+## Changelog
+
+| Versión / Módulo | Estado                | Cambios                                                                                                                                                                                       |
+| ---------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| M1               | Completado            | Definición del problema, objetivos, alcance, tecnologías, funciones principales, wireframes y creación del repositorio en GitHub.                                                             |
+| M2               | Avance inicial        | Estudio y aplicación de conceptos relacionados con Activities, Fragments, Intents, ciclo de vida y organización del proyecto Android.                                                         |
+| M3               | Desarrollo progresivo | Preparación del proyecto para comenzar la implementación funcional y continuar trasladando el diseño planteado en el borrador a la aplicación Android.                                        |
+| M4               | Actual                | Continuación del desarrollo del sistema de asistencia, enfocándose en el registro de participantes, estados de presente/ausente y preparación de las funciones de modificación y eliminación. |
+| M5               | Futuro                | Implementación de conteos automáticos de participantes, presentes y ausentes, además de la pantalla de resumen y la función para compartir resultados mediante un Intent de Android.          |
+| M6               | Futuro                | Ejecución de pruebas funcionales, identificación y corrección de errores y actualización de la documentación técnica.                                                                         |
+| M7               | Futuro                | Consolidación de funcionalidades, incorporación de cambios derivados de pruebas o retroalimentación y publicación del código y README actualizado en GitHub Classroom.                        |
+| M8               | Futuro                | Preparación y entrega de la versión final de la aplicación, repositorio y documentación del proyecto.                                                                                         |
+
+### Decisiones que se mantienen
+
+La primera versión continúa utilizando un alcance reducido para mantener el proyecto viable dentro del período académico.
+
+Por esta razón se mantienen las siguientes decisiones:
+
+* Utilizar Kotlin como lenguaje principal.
+* Utilizar Android Studio como entorno de desarrollo.
+* Utilizar XML para la definición de las interfaces.
+* Utilizar Git y GitHub para control de versiones y documentación.
+* No implementar una base de datos en la primera versión.
+* No utilizar Firebase ni servidores externos.
+* No implementar autenticación de usuarios.
+* Mantener los datos únicamente durante la sesión activa.
+
+Estas decisiones permiten concentrar el desarrollo en los fundamentos principales de Android y en las funciones directamente relacionadas con el control de asistencia.
+
+### Próximos pasos
+
+El siguiente avance del proyecto estará enfocado en completar las funciones de asistencia y posteriormente implementar:
+
+1. Conteo automático de participantes.
+2. Conteo de presentes y ausentes.
+3. Pantalla de resumen.
+4. Función para compartir los resultados utilizando un Intent.
+5. Pruebas funcionales de la aplicación.
+6. Corrección de errores encontrados.
+7. Actualización continua del README y del registro de cambios.
+8. Publicación del código actualizado en GitHub.
+9. Preparación del proyecto para GitHub Classroom y la entrega final del módulo 8.
+
+El proyecto continuará actualizándose de forma progresiva y cada cambio funcional importante será registrado mediante commits en GitHub.
