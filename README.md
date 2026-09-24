@@ -602,3 +602,5 @@ El siguiente avance del proyecto estará enfocado en completar las funciones de 
 9. Preparación del proyecto para GitHub Classroom y la entrega final del módulo 8.
 
 El proyecto continuará actualizándose de forma progresiva y cada cambio funcional importante será registrado mediante commits en GitHub.
+
+URL: https://github.com/kenavarro/Desarrollo-Movil/blob/main/README.md
